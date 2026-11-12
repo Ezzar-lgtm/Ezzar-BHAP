@@ -1,0 +1,322 @@
+
+/* =====================================
+   CSS UMUM (SEMUA HALAMAN)
+===================================== */
+
+/* Menghilangkan jarak bawaan browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Jenis huruf seluruh halaman */
+.container {
+    font-family: Arial, sans-serif;
+    color: #14213D;
+}
+
+
+/* =====================================
+   HEADER / BANNER
+===================================== */
+
+/* Mengatur ukuran banner */
+.header {
+    width: 100%;
+}
+
+/* Mengatur gambar banner */
+.header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* =====================================
+   NAVBAR / MENU
+===================================== */
+
+/* Mengatur menu navigasi */
+ul {
+    list-style-type: none;
+    background-color: #14213D;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Mengatur posisi menu */
+li {
+    display: inline-block;
+}
+
+/* Mengatur tulisan menu */
+li a {
+    display: block;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+}
+
+/* Efek saat kursor diarahkan ke menu */
+li a:hover:not(.active) {
+    background: #2563EB;
+}
+
+/* Warna menu halaman yang sedang dibuka */
+.active {
+    background: #2563EB;
+}
+
+
+/* =====================================
+   HOME
+===================================== */
+
+/* Mengatur keseluruhan isi Home */
+.isi {
+    text-align: center;
+    padding: 40px 25px;
+    margin: 20px;
+    color: #14213D;
+}
+
+/* Judul utama */
+.isi h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #14213D;
+}
+
+/* Warna khusus nama usaha */
+.isi h1 span {
+    color: #2563EB;
+}
+
+/* Subjudul */
+.isi h2 {
+    color: #3B82F6;
+    margin-bottom: 20px;
+}
+
+/* Paragraf Home */
+.isi p {
+    color: #475569;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Judul keunggulan */
+.isi h3 {
+    color: #14213D;
+    margin: 30px 0 20px;
+}
+
+/* Mengatur tiga kartu keunggulan */
+.keunggulan {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Tampilan setiap kartu */
+.kartu {
+    background: #DBEAFE;
+    padding: 25px;
+    width: 200px;
+    border-radius: 15px;
+    border-bottom: 4px solid #2563EB;
+}
+
+/* Judul kartu */
+.kartu h4 {
+    color: #2563EB;
+    margin-bottom: 10px;
+}
+
+/* Isi kartu */
+.kartu p {
+    color: #334155;
+    margin-bottom: 0;
+}
+
+
+/* =====================================
+   ABOUT US
+===================================== */
+
+/* Bagian tentang usaha */
+.biodata {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    gap: 50px;
+    background: #F1F7FF;
+}
+
+/* Lingkaran untuk logo */
+.gambar-biodata {
+    background: white;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border: 5px solid #2563EB;
+}
+
+/* Gambar logo */
+.foto {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+/* Bagian tulisan identitas usaha */
+.identitas {
+    padding: 20px;
+    line-height: 1.8;
+}
+
+/* Nama usaha */
+.identitas h2 {
+    color: #14213D;
+    font-size: 30px;
+}
+
+/* Subjudul About Us */
+.identitas h3 {
+    color: #2563EB;
+    margin-bottom: 10px;
+}
+
+/* Paragraf About Us */
+.identitas p {
+    color: #475569;
+    margin-bottom: 15px;
+}
+
+
+/* =====================================
+   VISI DAN MISI
+===================================== */
+
+/* Mengatur posisi kotak visi dan misi */
+.visi-misi {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+}
+
+/* Tampilan kotak visi dan misi */
+.kotak {
+    background: #DBEAFE;
+    padding: 25px;
+    width: 300px;
+    border-radius: 15px;
+    border-bottom: 4px solid #2563EB;
+}
+
+/* Judul visi dan misi */
+.kotak h3 {
+    color: #14213D;
+    margin-bottom: 10px;
+}
+
+/* Isi visi dan misi */
+.kotak p {
+    color: #475569;
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   KONTAK
+===================================== */
+
+/* Bagian hubungi kami */
+.kontak {
+    background: #14213D;
+    color: white;
+    padding: 30px 50px;
+}
+
+/* Judul hubungi kami */
+.kontak h2 {
+    color: #60A5FA;
+    margin-bottom: 20px;
+}
+
+/* WhatsApp dan Email dibuat sejajar */
+.isi-kontak {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Isi informasi kontak */
+.isi-kontak p {
+    color: white;
+    font-size: 18px;
+}
+
+
+/* =====================================
+   PRODUK
+===================================== */
+
+/* Mengatur susunan produk */
+.Produk {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+    justify-items: center;
+}
+
+/* Menghilangkan garis bawah link produk */
+.Produk a {
+    text-decoration: none;
+    color: #14213D;
+}
+
+/* Nama produk */
+.Produk p {
+    text-align: center;
+    background: #DBEAFE;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Gambar produk */
+.poto {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+/* Efek saat kursor diarahkan ke gambar */
+.poto:hover {
+    transform: scale(1.05);
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+/* Bagian paling bawah halaman */
+.akhir {
+    background: #14213D;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
